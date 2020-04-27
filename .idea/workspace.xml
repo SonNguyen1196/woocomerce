@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e190c785-4ab9-4094-8e9a-7a857a4ed99e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1ayfsOsV41zqjmRAkx20YcgqFx5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\assets\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\woocommerce" />
+      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\woocommerce\loop" />
+      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\assets\images" />
+      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\assets" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e190c785-4ab9-4094-8e9a-7a857a4ed99e" name="Default Changelist" comment="" />
+      <created>1587712959284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587712959284</updated>
+      <workItem from="1587712960467" duration="9292000" />
+      <workItem from="1587723793842" duration="3884000" />
+      <workItem from="1587751320712" duration="14814000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587723653498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587723653498" />
+    <state x="636" y="90" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587721479157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="90" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587721479157" />
+    <state x="596" y="107" width="882" height="760" key="find.popup" timestamp="1587795552730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="596" y="107" width="882" height="760" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587795552730" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1587803097315">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587803097315" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587797170636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587797170636" />
+  </component>
+</project>

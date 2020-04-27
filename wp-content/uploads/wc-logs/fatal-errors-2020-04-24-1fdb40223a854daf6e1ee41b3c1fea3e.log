@@ -1,0 +1,239 @@
+2020-04-24T08:36:08+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php:163
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(163): explode('?', 'jquery')
+#1 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(183): WP_Scripts->all_deps(Array, true, 1)
+#3 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(183): WP_Scripts->all_deps(Array, true, 1)
+#5 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(183): WP_Scripts->all_deps(Array, true, 1)
+#7 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 C:\wamp64\www\ in C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php on line 163
+
+2020-04-24T08:36:28+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php:163
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(163): explode('?', 'jquery')
+#1 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(183): WP_Scripts->all_deps(Array, true, 1)
+#3 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(183): WP_Scripts->all_deps(Array, true, 1)
+#5 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php(183): WP_Scripts->all_deps(Array, true, 1)
+#7 C:\wamp64\www\e-shopper\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 C:\wamp64\www\ in C:\wamp64\www\e-shopper\wp-includes\class.wp-dependencies.php on line 163
+
+2020-04-24T09:08:44+00:00 CRITICAL Uncaught Error: Class 'WPDocs_Walker_Nav_Menu' not found in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\header.php:54
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(723): require_once()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', true)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-home-page.php(5): get_header()
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\header.php on line 54
+
+2020-04-24T09:19:59+00:00 CRITICAL Uncaught Error: Call to undefined method stdClass::walker() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\class-nav-walker-menu.php:43
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\class-wp-walker.php(144): WPDocs_Walker_Nav_Menu->start_el('', Object(WP_Post), 0, Object(stdClass))
+#1 C:\wamp64\www\e-shopper\wp-includes\class-wp-walker.php(244): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '')
+#2 C:\wamp64\www\e-shopper\wp-includes\nav-menu-template.php(584): Walker->walk(Array, 0, Object(stdClass))
+#3 C:\wamp64\www\e-shopper\wp-includes\nav-menu-template.php(218): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\header.php(54): wp_nav_menu(Object(stdClass))
+#5 C:\wamp64\www\e-shopper\wp-includes\template.php(723): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', true)
+#7 C:\wamp64\www\e-shopper\wp-includes\general-template.php(41): locate in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\class-nav-walker-menu.php on line 43
+
+2020-04-24T09:46:44+00:00 CRITICAL Uncaught Error: Call to undefined function e_shopper_posted_on() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php:25
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(725): require()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', false)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\index.php(40): get_template_part('template-parts/...', 'post')
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php on line 25
+
+2020-04-24T09:47:24+00:00 CRITICAL Uncaught Error: Call to undefined function e_shopper_post_thumbnail() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php:29
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(725): require()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', false)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\index.php(40): get_template_part('template-parts/...', 'post')
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php on line 29
+
+2020-04-24T09:47:32+00:00 CRITICAL Uncaught Error: Call to undefined function e_shopper_entry_footer() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php:57
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(725): require()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', false)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\index.php(40): get_template_part('template-parts/...', 'post')
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php on line 57
+
+2020-04-24T09:49:23+00:00 CRITICAL Uncaught Error: Call to undefined function e_shopper_entry_footer() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php:57
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(725): require()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', false)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\index.php(40): get_template_part('template-parts/...', 'post')
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php on line 57
+
+2020-04-24T09:49:55+00:00 CRITICAL Uncaught Error: Call to undefined function e_shopper_entry_footer() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php:57
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(725): require()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', false)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\index.php(40): get_template_part('template-parts/...', 'post')
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content.php on line 57
+
+2020-04-24T10:35:29+00:00 CRITICAL syntax error, unexpected '}' in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 13
+
+2020-04-24T10:48:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function menuRecuisive(), 1 passed in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 15 and at least 2 expected in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:3
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(15): menuRecuisive(Array)
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\header.php(46): generateMenuPrimary()
+#2 C:\wamp64\www\e-shopper\wp-includes\template.php(723): require_once('C:\\wamp64\\www\\e...')
+#3 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', true)
+#4 C:\wamp64\www\e-shopper\wp-includes\general-template.php(41): locate_template(Array, true)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-home-page.php(5): get_header()
+#6 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#7 C:\wamp64\www\e-shopper\wp-blog-header.ph in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 3
+
+2020-04-24T10:50:47+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-includes\plugin.php:926
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\plugin.php(926): spl_object_hash(Object(wpdb))
+#1 C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php(201): _wp_filter_build_unique_id('query', Array, false)
+#2 C:\wamp64\www\e-shopper\wp-includes\plugin.php(140): WP_Hook->has_filter('query', Array)
+#3 C:\wamp64\www\e-shopper\wp-includes\wp-db.php(2103): has_filter('query', Array)
+#4 C:\wamp64\www\e-shopper\wp-includes\wp-db.php(2123): wpdb->placeholder_escape()
+#5 C:\wamp64\www\e-shopper\wp-includes\wp-db.php(1173): wpdb->add_placeholder_escape('nav_menu')
+#6 C:\wamp64\www\e-shopper\wp-includes\wp-db.php(1195): wpdb->_real_escape('nav_menu')
+#7 C:\wamp64\www\e-shopper\wp-includes\formatting.php(4271): wpdb->_escape('nav_menu')
+#8 [internal function]: esc_sql('nav_menu')
+#9 C:\wamp64\www\e-shopper\wp-includes\class-wp-term-query.php(408): array_map('esc_sql', Array)
+#10 C:\wamp64 in C:\wamp64\www\e-shopper\wp-includes\plugin.php on line 926
+
+2020-04-24T11:04:14+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:3
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(7): generateMenuPrimary(Array, 57)
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(7): generateMenuPrimary(Array, 57)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(7): generateMenuPrimary(Array, 57)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(7): generateMenuPrimary(Array, 57)
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(7): generateMenuPrimary(Array, 57)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(7): generateMenuPrimary(Array, 57)
+#6 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(7): generateMenuPrimary(Array, 57)
+#7 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu. in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 3
+
+2020-04-24T11:16:11+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:6
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(6): print_r(Object(WP_Post))
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#6 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#7 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9) in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 6
+
+2020-04-24T11:16:13+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:6
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(6): print_r(Object(WP_Post))
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#6 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#7 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9) in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 6
+
+2020-04-24T11:16:29+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:3
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#6 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#7 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu. in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 3
+
+2020-04-24T11:16:37+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:3
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#6 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#7 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu. in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 3
+
+2020-04-24T11:17:04+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:3
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#6 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#7 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu. in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 3
+
+2020-04-24T11:17:12+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php:3
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#1 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#4 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#5 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#6 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php(9): generateMenuPrimary(Array, 57)
+#7 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu. in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\generate-menu.php on line 3
+
+2020-04-24T18:27:19+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\header.php on line 62
+
+2020-04-24T18:27:21+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\header.php on line 62
+
+2020-04-24T18:48:32+00:00 CRITICAL Uncaught Error: Call to undefined function e_shopper_post_thumbnail() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content-page.php:17
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(725): require()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', false)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content-page.php on line 17
+
+2020-04-24T18:48:47+00:00 CRITICAL Uncaught Error: Call to undefined function e_shopper_post_thumbnail() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content-page.php:17
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(725): require()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', false)
+#2 C:\wamp64\www\e-shopper\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\e...')
+#5 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#6 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#7 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-parts\content-page.php on line 17
+
