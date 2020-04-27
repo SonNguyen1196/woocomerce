@@ -36,7 +36,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             <ul class="product__action">
                 <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                <li><a href="<?php echo $product->add_to_cart_url() ?>>"><i class="icon-handbag icons"></i></a></li>
+                <li><a href="<?php echo $product->add_to_cart_url() ?>"><i class="icon-handbag icons"></i></a></li>
 
                 <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
             </ul>
@@ -44,8 +44,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         <div class="fr__product__inner">
             <h4><a href="<?php echo get_permalink($product->ID) ?>"><?php echo $product->get_name() ?></a></h4>
             <ul class="fr__pro__prize">
-                <li class="old__prize"><?php echo $product->get_regular_price().get_woocommerce_currency_symbol() ?></li>
-                <li><?php echo $product->get_sale_price().get_woocommerce_currency_symbol() ?></li>
+                <li class="old__prize"><?php echo (!empty($product->get_regular_price())) ? $product->get_regular_price().get_woocommerce_currency_symbol() : '' ?></li>
+                <li><?php echo (!empty($product->get_sale_price())) ? $product->get_sale_price().get_woocommerce_currency_symbol() : '' ?></li>
             </ul>
         </div>
     </div>

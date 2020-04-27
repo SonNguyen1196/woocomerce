@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e190c785-4ab9-4094-8e9a-7a857a4ed99e" name="Default Changelist" comment="" />
+    <list default="true" id="e190c785-4ab9-4094-8e9a-7a857a4ed99e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/assets/images/bg/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/assets/images/bg/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/template-name/tpl-home-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/template-name/tpl-home-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce/archive-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce/archive-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce/content-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce/content-product.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +24,13 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ayfsOsV41zqjmRAkx20YcgqFx5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,18 +38,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\assets\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/e-shopper/woocommerce/single-product" />
       <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\woocommerce" />
       <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\woocommerce\loop" />
       <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\assets\images" />
-      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\assets\js" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -47,6 +67,7 @@
       <workItem from="1587712960467" duration="9292000" />
       <workItem from="1587723793842" duration="3884000" />
       <workItem from="1587751320712" duration="14814000" />
+      <workItem from="1587967270466" duration="10269000" />
     </task>
     <servers />
   </component>
@@ -62,17 +83,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="90" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587721479157" />
-    <state x="596" y="107" width="882" height="760" key="find.popup" timestamp="1587795552730">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="447" y="113" width="853" height="641" key="find.popup" timestamp="1587978876343">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="596" y="107" width="882" height="760" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587795552730" />
+    <state x="447" y="113" width="853" height="641" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1587978876343" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1587803097315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587803097315" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587797170636">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="467" y="213" width="670" height="572" key="search.everywhere.popup" timestamp="1587978020110">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1587797170636" />
+    <state x="467" y="213" width="670" height="572" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1587978020110" />
   </component>
 </project>
