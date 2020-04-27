@@ -153,11 +153,9 @@ function e_shopper_scripts() {
     wp_enqueue_style('e-shopper-responsive', get_stylesheet_directory_uri().'/assets/css/responsive.css');
     wp_enqueue_style('e-shopper-custom', get_stylesheet_directory_uri().'/assets/css/custom.css');
 
-    wp_dequeue_script('jquery');
-    wp_deregister_script('jquery');
-
+    wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'e-shopper-modernizr-3.5.0', get_template_directory_uri() . '/assets/js/vendor/modernizr-3.5.0.min.js', array(), _S_VERSION, true );
-    wp_register_script( 'e-shopper-jquery', get_template_directory_uri() . '/assets/js/vendor/jquery-3.2.1.min.js', array(), _S_VERSION, true );
+    wp_register_script( 'jquery', get_template_directory_uri() . '/assets/js/vendor/jquery-3.2.1.min.js', array(), _S_VERSION, true );
     wp_enqueue_script('e-shopper-jquery');
     wp_enqueue_script( 'e-shopper-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js',array(), _S_VERSION, true );
     wp_enqueue_script( 'e-shopper-plugins-js', get_template_directory_uri() . '/assets/js/plugins.js', array(), _S_VERSION, true );
@@ -165,7 +163,7 @@ function e_shopper_scripts() {
     wp_enqueue_script( 'e-shopper-carousel-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'e-shopper-waypoints-js', get_template_directory_uri() . '/assets/js/waypoints.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'e-shopper-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
-    wp_enqueue_script( 'e-shopper-ajax-js', get_template_directory_uri() . '/assets/js/custom.js', array('e-shopper-jquery'), _S_VERSION, true );
+    wp_enqueue_script( 'e-shopper-ajax-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), _S_VERSION, true );
     wp_localize_script( 'e-shopper-ajax-js', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
 }
 add_action( 'wp_enqueue_scripts', 'e_shopper_scripts' );
@@ -206,3 +204,8 @@ function get_data_product_page_ajax(){
 
     die();
 }
+
+add_action('woocommerce_after_shop_loop_item', 'my_print_stars' );
+
+
+require 'inc/woocomerce_function.php';

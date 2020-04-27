@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log('ca');
     $('.woocommerce-pagination li .page-numbers').on('click', function (e) {
         e.preventDefault();
         $.ajax({
@@ -19,4 +18,11 @@ $(document).ready(function () {
             }
         })
     })
+
+    if ($('.woocommerce-message.custom-display').is(':visible')){
+        $('.woocommerce-message.custom-display').removeClass('show');
+    } else {
+        $('.woocommerce-message.custom-display').addClass('show');
+    }
+
 })
