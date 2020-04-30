@@ -40,13 +40,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             <li class="old__prize"><?php echo $product->get_regular_price().get_woocommerce_currency_symbol() ?></li>
             <li><?php echo $product->get_sale_price().get_woocommerce_currency_symbol() ?></li>
         </ul>
-        <?php
-        print_r($product->get_reviews_allowed());
-        print_r($product->get_rating_counts());
-        print_r($product->get_average_rating());
-        print_r($product->get_review_count());
-        print_r(wc_get_rating_html($product->get_average_rating()));
-        ?>
         <ul class="rating">
             <li><i class="icon-star icons"></i></li>
             <li><i class="icon-star icons"></i></li>
@@ -56,7 +49,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisLorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqul Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="fr__list__btn">
-            <a class="fr__btn" href="<?php echo $product->add_to_cart_url() ?>>">Add To Cart</a>
+            <a data-product-id = "<?php echo $product->get_id() ?>" class="fr__btn add-to-cart-link" href="<?php echo $product->add_to_cart_url() ?>"><i class="fa fa-spinner" aria-hidden="true"></i> Add To Cart</a>
         </div>
     </div>
 

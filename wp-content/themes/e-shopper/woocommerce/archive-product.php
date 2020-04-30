@@ -39,6 +39,11 @@ get_header();
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <?php do_action('woocommerce_notice_before_shop_loop'); ?>
+        </div>
+    </div>
     <!-- End Bradcaump area -->
     <!-- Start Product Grid -->
     <section class="htc__product__grid bg__white ptb--100">
@@ -47,23 +52,12 @@ get_header();
                 <div class="col-lg-9 col-lg-push-3 col-md-9 col-md-push-3 col-sm-12 col-xs-12">
                     <div class="htc__product__rightidebar">
                         <div class="htc__grid__top">
-                            <div class="htc__select__option">
-                                <select class="ht__select">
-                                    <option>Default softing</option>
-                                    <option>Sort by popularity</option>
-                                    <option>Sort by average rating</option>
-                                    <option>Sort by newness</option>
-                                </select>
-                                <select class="ht__select">
-                                    <option>Show by</option>
-                                    <option>Sort by popularity</option>
-                                    <option>Sort by average rating</option>
-                                    <option>Sort by newness</option>
-                                </select>
-                            </div>
-                            <div class="ht__pro__qun">
-                                <span>Showing 1-12 of 1033 products</span>
-                            </div>
+                            <?php
+
+                                if (woocommerce_product_loop()) {
+                                    do_action('woocommerce_before_shop_loop');
+                                }
+                            ?>
                             <!-- Start List And Grid View -->
                             <ul class="view__mode" role="tablist">
                                 <li role="presentation" class="grid-view active"><a href="#grid-view" role="tab" data-toggle="tab"><i class="zmdi zmdi-grid"></i></a></li>

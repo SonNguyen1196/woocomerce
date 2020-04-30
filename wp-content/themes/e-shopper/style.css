@@ -3563,16 +3563,41 @@ ul.htc__instagram__posts.owl-carousel li img {
 
 
 
-.custom-display{
-	width: 300px;
-	height: 100px;
-	position: absolute;
-	right: -100%;
-	transition: all 2s ease-in-out;
-	z-index: 9;
-}
+/*.custom-display{*/
+/*	width: 300px;*/
+/*	height: 100px;*/
+/*	position: absolute;*/
+/*	right: -100%;*/
+/*	transition: all 2s ease-in-out;*/
+/*	z-index: 9;*/
+/*}*/
 
 .custom-display.show{
 	right: 0;
 }
 
+
+a .fa-spinner{
+	display: none;
+	width: 18px;
+	height: 18px;
+	margin: auto;
+	background: transparent;
+	-webkit-animation: rotation 2s infinite linear;;
+	-moz-animation: rotation 2s infinite linear;;
+	-ms-animation: rotation 2s infinite linear;;
+	animation: rotation 2s infinite linear;;
+
+}
+a .fa-spinner.active{
+	display: inline-block;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}

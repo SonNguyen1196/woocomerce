@@ -1,0 +1,27 @@
+2020-04-30T08:00:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function e_shoppper_custom_add_to_cart_text(), 1 passed in C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php on line 289 and exactly 2 expected in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\woocomerce_function.php:10
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php(289): e_shoppper_custom_add_to_cart_text('<a href="?add-t...')
+#1 C:\wamp64\www\e-shopper\wp-includes\plugin.php(206): WP_Hook->apply_filters('<a href="?add-t...', Array)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\woocommerce\loop\add-to-cart.php(35): apply_filters('woocommerce_loo...', '<a href="?add-t...', Object(WC_Product_Simple), Array)
+#3 C:\wamp64\www\e-shopper\wp-content\plugins\woocommerce\includes\wc-core-functions.php(251): include('C:\\wamp64\\www\\e...')
+#4 C:\wamp64\www\e-shopper\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1268): wc_get_template('loop/add-to-car...', Array)
+#5 C:\wamp64\www\e-shopper\wp-includes\cl in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\woocomerce_function.php on line 10
+
+2020-04-30T08:01:12+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function e_shoppper_custom_add_to_cart_text(), 1 passed in C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php on line 289 and exactly 2 expected in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\woocomerce_function.php:10
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php(289): e_shoppper_custom_add_to_cart_text('<a href="?add-t...')
+#1 C:\wamp64\www\e-shopper\wp-includes\plugin.php(206): WP_Hook->apply_filters('<a href="?add-t...', Array)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\woocommerce\loop\add-to-cart.php(35): apply_filters('woocommerce_loo...', '<a href="?add-t...', Object(WC_Product_Simple), Array)
+#3 C:\wamp64\www\e-shopper\wp-content\plugins\woocommerce\includes\wc-core-functions.php(251): include('C:\\wamp64\\www\\e...')
+#4 C:\wamp64\www\e-shopper\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1268): wc_get_template('loop/add-to-car...', Array)
+#5 C:\wamp64\www\e-shopper\wp-includes\cl in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\woocomerce_function.php on line 10
+
+2020-04-30T08:03:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function e_shoppper_custom_add_to_cart_text(), 1 passed in C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php on line 289 and exactly 2 expected in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\woocomerce_function.php:10
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php(289): e_shoppper_custom_add_to_cart_text('<a href="?add-t...')
+#1 C:\wamp64\www\e-shopper\wp-includes\plugin.php(206): WP_Hook->apply_filters('<a href="?add-t...', Array)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\woocommerce\loop\add-to-cart.php(35): apply_filters('woocommerce_loo...', '<a href="?add-t...', Object(WC_Product_Simple), Array)
+#3 C:\wamp64\www\e-shopper\wp-content\plugins\woocommerce\includes\wc-core-functions.php(251): include('C:\\wamp64\\www\\e...')
+#4 C:\wamp64\www\e-shopper\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1268): wc_get_template('loop/add-to-car...', Array)
+#5 C:\wamp64\www\e-shopper\wp-includes\cl in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\inc\woocomerce_function.php on line 10
+

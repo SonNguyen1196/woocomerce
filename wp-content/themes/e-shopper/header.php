@@ -54,27 +54,6 @@
                             ] )
                             ?>
 
-                            <div class="mobile-menu clearfix visible-xs visible-sm">
-                                <nav id="mobile_dropdown">
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="blog.html">blog</a></li>
-                                        <li><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                <li><a href="cart.html">Cart page</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="contact.html">contact</a></li>
-                                                <li><a href="product-grid.html">product grid</a></li>
-                                                <li><a href="product-details.html">product details</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
                         </div>
                         <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
                             <div class="header__right">
@@ -84,10 +63,20 @@
                                 <div class="header__account">
                                     <a href="#"><i class="icon-user icons"></i></a>
                                 </div>
+                                <?php
+                                $carts = WC()->cart->get_cart();
+                                $quantity = (is_array($carts)) ? count($carts) : 0 ;
+                                global $woocommerce;
+                                ?>
                                 <div class="htc__shopping__cart">
                                     <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
-                                    <a href="#"><span class="htc__qua">2</span></a>
+<!--                                    <a class="cart-customlocation" href="#">--><?php //echo $woocommerce->cart->cart_contents_count ;?><!-- </a>-->
+                                    <a class="mini-cart-custom" href="#"><span class="htc__qua"><?php echo $woocommerce->cart->cart_contents_count ;?></span></a>
+
                                 </div>
+
+
+
                             </div>
                         </div>
                     </div>
@@ -127,45 +116,22 @@
                 <div class="offsetmenu__close__btn">
                     <a href="#"><i class="zmdi zmdi-close"></i></a>
                 </div>
-                <div class="shp__cart__wrap">
-                    <div class="shp__single__product">
-                        <div class="shp__pro__thumb">
-                            <a href="#">
-                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/product-2/sm-smg/1.jpg" alt="product images">
-                            </a>
-                        </div>
-                        <div class="shp__pro__details">
-                            <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
-                            <span class="quantity">QTY: 1</span>
-                            <span class="shp__price">$105.00</span>
-                        </div>
-                        <div class="remove__btn">
-                            <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
-                        </div>
+                <div id="site-header-cart" class="widget_shopping_cart_content">
+
+                    <div class="shp__cart__wrap widget woocommerce widget_shopping_cart">
+                        <?php woocommerce_mini_cart();?>
+
                     </div>
-                    <div class="shp__single__product">
-                        <div class="shp__pro__thumb">
-                            <a href="#">
-                                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/product-2/sm-smg/2.jpg" alt="product images">
-                            </a>
-                        </div>
-                        <div class="shp__pro__details">
-                            <h2><a href="product-details.html">Brone Candle</a></h2>
-                            <span class="quantity">QTY: 1</span>
-                            <span class="shp__price">$25.00</span>
-                        </div>
-                        <div class="remove__btn">
-                            <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
-                        </div>
-                    </div>
+
                 </div>
+
                 <ul class="shoping__total">
                     <li class="subtotal">Subtotal:</li>
-                    <li class="total__price">$130.00</li>
+                    <li class="total__price"><?php echo WC()->cart->get_cart_total();?></li>
                 </ul>
                 <ul class="shopping__btn">
-                    <li><a href="cart.html">View Cart</a></li>
-                    <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                    <li><a href="<?php echo wc_get_cart_url() ?>">View Cart</a></li>
+                    <li class="shp__checkout"><a href="<?php echo wc_get_checkout_url() ?>">Checkout</a></li>
                 </ul>
             </div>
         </div>

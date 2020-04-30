@@ -1,28 +1,38 @@
 $(document).ready(function () {
-    $('.woocommerce-pagination li .page-numbers').on('click', function (e) {
+    $('.add-to-cart-link').on('click', function (e) {
         e.preventDefault();
+        var linkIntane = $(this);
+        var idProduct = $(this).data('product-id');
         $.ajax({
-            method: 'GET',
-            url: ajax_object.ajax_url,
             data: {
-                page_number : $(this).text(),
-                action: 'get_data_product_page_ajax',
+                action: 'custom_ajax_add_to_cart',
+                product_id: idProduct,
             },
-            dataType: 'html',
-            success: function (data) {
-                console.log(data);
+            type: 'POST',
+            dataType : 'json',
+            url: ajax_object.ajax_url ,
+            beforeSend: function(){
+                linkIntane.find('.icon-handbag').hide();
+                linkIntane.find('.fa-spinner').addClass('active');
+                linkIntane.find('.fa-spinner').show();
             },
 
-            error: function (error) {
+            success: function (response) {
+                console.log(response);
+                // if (response.data.code == 200){
+                //     setTimeout(function () {
+                //         linkIntane.find('.icon-handbag').show();
+                //         linkIntane.find('.fa-spinner').hide();
+                //     }, 2000);
+                //
+                // }
+            },
+
+            error: function () {
 
             }
+
         })
     })
-
-    if ($('.woocommerce-message.custom-display').is(':visible')){
-        $('.woocommerce-message.custom-display').removeClass('show');
-    } else {
-        $('.woocommerce-message.custom-display').addClass('show');
-    }
 
 })

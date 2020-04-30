@@ -25,7 +25,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 
-<div <?php wc_product_class( 'col-md-4 col-lg-4 col-sm-6 col-xs-12', $product ); ?>>
+<div <?php wc_product_class( 'col-md-4 col-sm-6', $product ); ?>>
     <div class="category">
         <div class="ht__cat__thumb">
             <a href="<?php echo get_permalink($product->ID) ?>">
@@ -36,7 +36,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             <ul class="product__action">
                 <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                <li><a href="<?php echo $product->add_to_cart_url() ?>"><i class="icon-handbag icons"></i></a></li>
+                <?php do_action('e_shopper_woocommerce_after_shop_loop_item'); ?>
 
                 <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
             </ul>
