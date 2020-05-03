@@ -278,3 +278,104 @@ function header_add_to_cart_fragment( $fragments ) {
 //    die();
 //}
 require 'inc/woocomerce_function.php';
+
+
+/**
+ * Adds Foo_Widget widget.
+ */
+class Select_Product_Widget extends WP_Widget {
+
+    /**
+     * Register widget with WordPress.
+     */
+    function __construct() {
+        parent::__construct(
+            'select_product_widget', // Base ID
+            esc_html__( 'Choose a product', 'e-shopper' ), // Name
+            array( 'description' => esc_html__( 'Select Special Product', 'text_domain' ), ) // Args
+        );
+    }
+
+    /**
+     * Front-end display of widget.
+     *
+     * @see WP_Widget::widget()
+     *
+     * @param array $args     Widget arguments.
+     * @param array $instance Saved values from database.
+     */
+    public function widget( $args, $instance ) {
+        echo $args['before_widget'];
+        if ( ! empty( $instance['title'] ) ) {
+            echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
+        }
+        echo esc_html__( 'Hello, World!', 'text_domain' );
+        print_r(get_post($instance['product']));
+        echo $args['after_widget'];
+    }
+
+    /**
+     * Back-end widget form.
+     *
+     * @see WP_Widget::form()
+     *
+     * @param array $instance Previously saved values from database.
+     */
+    public function form( $instance ) {
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'text_domain' );
+        $product = ! empty( $instance['product'] ) ? $instance['product'] : esc_html__( 'New Product', 'text_domain' );
+        $products = get_posts([
+            'post_type' => 'product',
+            'posts_per_page' => -1,
+        ])
+        ?>
+        <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+        </p>
+
+        <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'product' ) ); ?>"><?php esc_attr_e( 'Product:', 'text_domain' ); ?></label><br>
+            <select name="<?php echo esc_attr( $this->get_field_name( 'product' ) ); ?>" id="<?php echo esc_attr( $this->get_field_name( 'product' ) ); ?>">
+
+                <?php
+                    if (is_array($products)){
+                        if (count($products) > 0){
+                            foreach ($products as $product){
+                                ?>
+                                <option <?php selected( $instance['product'], $product->ID) ?> value="<?php echo $product->ID ?>"><?php echo $product->post_title ?></option>
+                                <?php
+                            }
+                        }
+                    }
+                ?>
+            </select>
+        </p>
+
+        <?php
+    }
+
+    /**
+     * Sanitize widget form values as they are saved.
+     *
+     * @see WP_Widget::update()
+     *
+     * @param array $new_instance Values just sent to be saved.
+     * @param array $old_instance Previously saved values from database.
+     *
+     * @return array Updated safe values to be saved.
+     */
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
+        $instance['product'] = ( ! empty( $new_instance['product'] ) ) ? sanitize_text_field( $new_instance['product'] ) : '';
+
+        return $instance;
+    }
+
+} // class Foo_Widget
+
+function register_special_product_widget() {
+    register_widget( 'Select_Product_Widget' );
+}
+add_action( 'widgets_init', 'register_special_product_widget' );

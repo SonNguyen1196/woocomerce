@@ -122,7 +122,7 @@ class Eshopper {
             'e_shopper_setting_contact_section'
         );
 
-        register_setting( 'e-shopper-contact', 'e_shopper_setting_phone' );
+        register_setting( 'e-shopper-contact', 'e_shopper_setting_phone');
         register_setting( 'e-shopper-contact', 'e_shopper_setting_email' );
         register_setting( 'e-shopper-contact', 'e_shopper_setting_address' );
     }
@@ -153,5 +153,6 @@ class Eshopper {
         </tr>
         <?php
     }
+
 
 }
