@@ -1,0 +1,180 @@
+2020-05-03T03:43:41+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 4 and at least 2 expected in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php:403
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php(4): add_action('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::init('')
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdoc in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php on line 403
+
+2020-05-03T03:43:41+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 4 and at least 2 expected in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php:403
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php(4): add_action('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::init('')
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdoc in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php on line 403
+
+2020-05-03T03:45:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 4 and at least 2 expected in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php:403
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php(4): add_action('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::init('')
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdoc in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php on line 403
+
+2020-05-03T03:45:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 4 and at least 2 expected in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php:403
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php(4): add_action('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::init('')
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdoc in /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php on line 403
+
+2020-05-03T04:05:45+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::addOptionPage('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin-ajax.php(45): do_action('admin_init')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 25
+
+2020-05-03T04:05:53+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::addOptionPage('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin-ajax.php(45): do_action('admin_init')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 25
+
+2020-05-03T04:06:19+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::addOptionPage('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin-ajax.php(45): do_action('admin_init')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 25
+
+2020-05-03T04:06:21+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:25
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::addOptionPage('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin.php(170): do_action('admin_init')
+#4 /Applications/MAMP/htdocs/woocomerce/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 25
+
+2020-05-03T04:35:00+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:21
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::addOptionPage('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#4 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-cron.php(44): require_once('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 21
+
+2020-05-03T04:35:00+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:21
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::addOptionPage('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#4 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin.php(34): require_once('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 21
+
+2020-05-03T04:35:00+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:21
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::addOptionPage('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#4 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-blog-header.php(13): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/woocomerce/index.php(17): require('/Applications/M...')
+#8 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 21
+
+2020-05-03T07:22:38+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in /Applications/MAMP/htdocs/woocomerce/wp-content/themes/e-shopper/functions.php:282
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(514): include()
+#1 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/themes/e-shopper/functions.php on line 282
+
+2020-05-03T07:27:08+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in /Applications/MAMP/htdocs/woocomerce/wp-content/themes/e-shopper/functions.php:285
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): books_register_ref_page('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#4 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin.php(34): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/woocomerce/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/themes/e-shopper/functions.php on line 285
+
+2020-05-03T07:27:09+00:00 CRITICAL Uncaught Error: Call to undefined function add_menu_page() in /Applications/MAMP/htdocs/woocomerce/wp-content/themes/e-shopper/functions.php:285
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): books_register_ref_page('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-settings.php(540): do_action('init')
+#4 /Applications/MAMP/htdocs/woocomerce/wp-config.php(90): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/woocomerce/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/woocomerce/wp-blog-header.php(13): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/woocomerce/index.php(17): require('/Applications/M...')
+#8 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/themes/e-shopper/functions.php on line 285
+
+2020-05-03T09:01:45+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:104
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::settings_e_shopper_contatc_init('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin.php(170): do_action('admin_init')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 104
+
+2020-05-03T09:03:27+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:97
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::settings_e_shopper_contatc_init('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin.php(170): do_action('admin_init')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 97
+
+2020-05-03T09:04:04+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php:97
+Stack trace:
+#0 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(287): Eshopper::settings_e_shopper_contatc_init('')
+#1 /Applications/MAMP/htdocs/woocomerce/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/woocomerce/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/woocomerce/wp-admin/admin.php(170): do_action('admin_init')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 97
+

@@ -229,33 +229,6 @@ function custom_ajax_add_to_cart() {
     wp_die();
 }
 
-//function custom_ajax_add_to_cart(){
-//    if(!empty($_POST['product_id'])){
-//        $product_id = $_POST['product_id'];
-//        global $woocommerce;
-//        $woocommerce->cart->add_to_cart($product_id);
-//        WC_AJAX :: get_refreshed_fragments();
-//        wp_send_json_success(['message' => 'Success',  'code' => 200]);
-//    } else{
-//        wp_send_json_error(['message' => 'Fail',  'code' => 500]);
-//    }
-//
-//    die();
-//}
-
-//add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
-//
-//function iconic_cart_count_fragments( $fragments ) {
-//
-////    $fragments['div.header-cart-count'] = '<div class="header-cart-count">' . WC()->cart->get_cart_contents_count() . '</div>';
-//    global $woocommerce;
-//    ob_start();
-//    $fragments['a.mini-cart-custom'] = ob_get_clean();
-//    $fragments['span.htc__qua'] = '<span class="htc__qua">'. $woocommerce->cart->cart_contents_count .'</span>';
-//    return $fragments;
-//
-//}
-
 add_filter( 'woocommerce_add_to_cart_fragments', 'header_add_to_cart_fragment', 30, 1 );
 function header_add_to_cart_fragment( $fragments ) {
     global $woocommerce;
@@ -341,3 +314,11 @@ function wpdocs_custom_login() {
 
 add_action( 'after_setup_theme', 'wpdocs_custom_login' );
 
+//apply_filters( 'wc_add_to_cart_message_html',  $message,  $products );
+//
+//add_filter('wc_add_to_cart_message', 'filter_add_to_cart_error');
+//function filter_add_to_cart_error($message,  $products){
+//    print_r($message);
+//    die();
+//}
+require 'inc/woocomerce_function.php';
