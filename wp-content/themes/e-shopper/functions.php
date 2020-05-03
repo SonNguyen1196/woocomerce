@@ -282,37 +282,137 @@ add_action('init', function() {
  * Perform automatic login.
  */
 function wpdocs_custom_login() {
-    $errors = [];
-    print_r($_POST);
-    if(empty($_POST['username'])){
-        $errors['username'] = 'Username is not empty';
-    }
 
-    if(empty($_POST['password'])){
-        $errors['password'] = 'Password is not empty';
-    }
-    if (count($errors)> 0){
-        $string = http_build_query($errors);
-        wp_redirect(home_url('loginaaASDAS'));
-    } else{
-        $creds = array(
-            'user_login'    => $_POST['username'],
-            'user_password' => $_POST['password'],
-            'remember'      => true
-        );
-        $user = wp_signon( $creds, false );
+    if(isset($_POST['username']) && isset($_POST['username']) ){
 
-        if ( is_wp_error( $user ) ) {
-            echo $user->get_error_message();
-        } else{
-            wp_redirect(site_url(), 301);
-            exit();
+        $errors = [];
+        if(empty($_POST['username'])){
+            $errors['username'] = 'Username is not empty';
         }
+
+        if(empty($_POST['password'])){
+            $errors['password'] = 'Password is not empty';
+        }
+
+        if (count($errors)> 0){
+            $string = http_build_query($errors);
+            $url_redirect = home_url('login?'.$string);
+            header("Refresh:0;".$url_redirect);
+        } else{
+            $creds = array(
+                'user_login'    => $_POST['username'],
+                'user_password' => $_POST['password'],
+                'remember'      => true
+            );
+            $user = wp_signon( $creds, false );
+
+            if ( is_wp_error( $user ) ) {
+                $errors['error_login'] = $user->get_error_message();
+                $string = http_build_query($errors);
+                $url_redirect = home_url('login?'.$string);
+                header("Refresh:0;".$url_redirect);
+            } else{
+                wp_redirect(site_url(), 301);
+                exit();
+            }
+        }
+
     }
 
 }
 
 add_action( 'after_setup_theme', 'wpdocs_custom_login' );
+
+function wpdocs_custom_register() {
+
+    if(isset($_POST['user_name_create']) && isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['password_create']) && isset($_POST['phone']) &&  isset($_POST['email']) && isset($_POST['password_confirm'])){
+        $errors = [];
+        if(empty($_POST['user_name_create'])){
+            $errors['user_name_create'] = 'Username is not empty';
+        }
+
+        if(empty($_POST['first_name'])){
+            $errors['first_name'] = 'First name is not empty';
+        }
+
+        if(empty($_POST['last_name'])){
+            $errors['last_name'] = 'Last name is not empty';
+        }
+
+        if(empty($_POST['password_create'])){
+            $errors['password_create'] = 'Password is not empty';
+        }
+
+        if(empty($_POST['email'])){
+            $errors['email'] = 'Email is not empty';
+        }
+
+        if(empty($_POST['phone'])){
+            $errors['phone'] = 'Phone is not empty';
+        }
+
+        if(empty($_POST['password_confirm'])){
+            $errors['password_confirm'] = 'Password Confirm is not empty';
+        }
+
+        if($_POST['password_confirm'] !=  $_POST['password_create']){
+            $errors['password_math'] = 'Password is not same';
+        }
+
+
+
+        if (count($errors)> 0){
+            $string = http_build_query($errors);
+            $url_redirect = home_url('login?'.$string);
+            header("Refresh:0;".$url_redirect);
+        } else{
+            if ( username_exists( $_POST['username'] )){
+                $errors['username_exists'] = 'Username is already';
+                $string = http_build_query($errors);
+                $url_redirect = home_url('login?'.$string);
+                header("Refresh:0;".$url_redirect);
+            }elseif (email_exists($_POST['email'])){
+                $errors['email_exists'] = 'Email is already';
+                $string = http_build_query($errors);
+                $url_redirect = home_url('login?'.$string);
+                header("Refresh:0;".$url_redirect);
+            }
+
+            else{
+                print_r($_POST['password_create']);
+                $userdata = array(
+                    'user_pass'             => $_POST['password_create'],   //(string) The plain-text user password.
+                    'user_login'            => $_POST['user_name_create'],   //(string) The user's login username.
+                    'user_nicename'         => $_POST['user_name_create'],   //(string) The URL-friendly user name.
+                    'user_email'            => $_POST['email'],   //(string) The user email address.
+                    'display_name'          => $_POST['user_name_create'],   //(string) The user's display name. Default is the user's username.
+                    'nickname'              => $_POST['user_name_create'],   //(string) The user's nickname. Default is the user's username.
+                    'first_name'            => $_POST['first_name'],   //(string) The user's first name. For new users, will be used to build the first part of the user's display name if $display_name is not specified.
+                    'last_name'             => $_POST['last_name'],   //(string) The user's last name. For new users, will be used to build the second part of the user's display name if $display_name is not specified.
+                    'user_registered'       => date("F j, Y, g:i a"),   //(string) Date the user registered. Format is 'Y-m-d H:i:s'.
+                    'role'                  => 'administrator',   //(string) User's role.
+                    'user_phone'            => $_POST['phone'],   //(string) User's role.
+                );
+                $user_id = wp_insert_user($userdata);
+
+                if ( is_wp_error( $user_id ) ) {
+                    $errors['insert_user'] = $user_id->get_error_message();
+                    $string = http_build_query($errors);
+                    $url_redirect = home_url('login?'.$string);
+                    header("Refresh:0;".$url_redirect);
+                } else{
+                    $url_redirect = home_url('login');
+                    header("Refresh:0;".$url_redirect);
+                }
+            }
+
+        }
+
+    }
+
+}
+
+add_action( 'after_setup_theme', 'wpdocs_custom_register' );
 
 //apply_filters( 'wc_add_to_cart_message_html',  $message,  $products );
 //
@@ -321,8 +421,6 @@ add_action( 'after_setup_theme', 'wpdocs_custom_login' );
 //    print_r($message);
 //    die();
 //}
-require 'inc/woocomerce_function.php';
-
 
 /**
  * Adds Foo_Widget widget.

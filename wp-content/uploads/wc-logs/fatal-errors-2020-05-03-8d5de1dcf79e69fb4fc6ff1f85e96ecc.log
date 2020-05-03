@@ -178,3 +178,9 @@ Stack trace:
 #4 {main}
   thrown in /Applications/MAMP/htdocs/woocomerce/wp-content/plugins/e-shopper-contact/class/class.eshopper-init.php on line 97
 
+2020-05-03T12:47:39+00:00 CRITICAL require(): Failed opening required 'inc/woocomerce_function.php' (include_path='.;C:\php\pear') in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\functions.php on line 324
+
+2020-05-03T12:47:40+00:00 CRITICAL require(): Failed opening required 'inc/woocomerce_function.php' (include_path='.;C:\php\pear') in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\functions.php on line 324
+
+2020-05-03T18:18:20+00:00 CRITICAL Object of class WP_Error could not be converted to string in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\functions.php on line 398
+
