@@ -1,0 +1,27 @@
+2020-05-02T09:24:15+00:00 CRITICAL Uncaught Error: Call to undefined function checck_uri_exits() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-login.php:20
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template.php(723): require_once()
+#1 C:\wamp64\www\e-shopper\wp-includes\template.php(672): load_template('C:\\wamp64\\www\\e...', true)
+#2 C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\functions.php(297): locate_template('template-name/t...', true)
+#3 C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php(287): {closure}('')
+#4 C:\wamp64\www\e-shopper\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 C:\wamp64\www\e-shopper\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\e-shopper\wp-settings.php(540): do_action('init')
+#7 C:\wamp64\www\e-shopper\wp-config.php(90): require_once('C:\\wamp64\\www\\e...')
+#8 C:\wamp64\www\e-shopper\wp-load.php(37): require_once('C:\\wamp64\\www\\e...')
+#9 C:\wamp64\www\e-shopper\wp-blog-header.php(13): require_once('C:\\wamp64\\ in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-login.php on line 20
+
+2020-05-02T09:31:03+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-login.php on line 21
+
+2020-05-02T09:31:08+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-login.php on line 21
+
+2020-05-02T09:31:20+00:00 CRITICAL Uncaught Error: Call to undefined function checck_uri_exits() in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-login.php:21
+Stack trace:
+#0 C:\wamp64\www\e-shopper\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\e-shopper\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\e...')
+#2 C:\wamp64\www\e-shopper\index.php(17): require('C:\\wamp64\\www\\e...')
+#3 {main}
+  thrown in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\template-name\tpl-login.php on line 21
+
+2020-05-02T10:02:35+00:00 CRITICAL syntax error, unexpected ')' in C:\wamp64\www\e-shopper\wp-content\themes\e-shopper\functions.php on line 324
+

@@ -270,11 +270,74 @@ function header_add_to_cart_fragment( $fragments ) {
     return $fragments;
 }
 
-//apply_filters( 'wc_add_to_cart_message_html',  $message,  $products );
-//
-//add_filter('wc_add_to_cart_message', 'filter_add_to_cart_error');
-//function filter_add_to_cart_error($message,  $products){
-//    print_r($message);
-//    die();
-//}
-require 'inc/woocomerce_function.php';
+
+require 'inc/woocomerce/woocomerce_function.php';
+
+$row = $wpdb->get_results(  "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name = 'wp_users' AND column_name = 'user_phone'"  );
+
+if(empty($row)){
+    $wpdb->query("ALTER TABLE wp_users ADD user_phone VARCHAR (30) NOT NULL DEFAULT ''");
+}
+
+
+add_action('init', function() {
+    $url_path = trim(parse_url(add_query_arg(array()), PHP_URL_PATH), '/');
+    if ( $url_path === 'login/order' ) {
+        $load = locate_template('template-name/view/order.php', true);
+        if ($load) {
+            exit(); //
+        }
+    }
+
+    if ( $url_path === 'login/dashboard' ) {
+        $load = locate_template('template-name/view/dashboard.php', true);
+        if ($load) {
+            exit(); //
+        }
+    }
+
+    if ( $url_path === 'login/info' ) {
+        $load = locate_template('template-name/view/info.php', true);
+        if ($load) {
+            exit(); //
+        }
+    }
+});
+
+/**
+ * Perform automatic login.
+ */
+function wpdocs_custom_login() {
+    $errors = [];
+    print_r($_POST);
+    if(empty($_POST['username'])){
+        $errors['username'] = 'Username is not empty';
+    }
+
+    if(empty($_POST['password'])){
+        $errors['password'] = 'Password is not empty';
+    }
+    if (count($errors)> 0){
+        $string = http_build_query($errors);
+        wp_redirect(home_url('loginaaASDAS'));
+    } else{
+        $creds = array(
+            'user_login'    => $_POST['username'],
+            'user_password' => $_POST['password'],
+            'remember'      => true
+        );
+        $user = wp_signon( $creds, false );
+
+        if ( is_wp_error( $user ) ) {
+            echo $user->get_error_message();
+        } else{
+            wp_redirect(site_url(), 301);
+            exit();
+        }
+    }
+
+}
+
+add_action( 'after_setup_theme', 'wpdocs_custom_login' );
+
