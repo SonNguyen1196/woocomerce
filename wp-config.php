@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'e_shopper' );
+define( 'DB_NAME', 'wp_e_shopper' );
 
 /** MySQL database username */
 define( 'DB_USER', 'nns' );

@@ -521,3 +521,12 @@ function register_special_product_widget() {
     register_widget( 'Select_Product_Widget' );
 }
 add_action( 'widgets_init', 'register_special_product_widget' );
+
+function wpd_foo_rewrite_rule() {
+    flush_rewrite_rules();
+    add_rewrite_rule(
+        '/^aaaaaaaaaaaaaaa/',
+        'index.php?p=$matches[1]',
+        'top'
+    );
+}
